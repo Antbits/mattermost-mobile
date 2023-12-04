@@ -5,7 +5,7 @@ exports[`components/categories_list should render channels error 1`] = `
   style={
     [
       {
-        "backgroundColor": "#1e325c",
+        "backgroundColor": "#295d46",
         "flex": 1,
         "paddingTop": 10,
       },
@@ -315,7 +315,7 @@ exports[`components/categories_list should render channels error 1`] = `
               "marginTop": 1,
             },
             {
-              "color": "#1c58d9",
+              "color": "#C8526A",
             },
           ]
         }
@@ -332,7 +332,7 @@ exports[`components/categories_list should render team error 1`] = `
   style={
     [
       {
-        "backgroundColor": "#1e325c",
+        "backgroundColor": "#295d46",
         "flex": 1,
         "paddingTop": 10,
       },
@@ -713,7 +713,7 @@ exports[`components/categories_list should render team error 1`] = `
               "marginTop": 1,
             },
             {
-              "color": "#1c58d9",
+              "color": "#C8526A",
             },
           ]
         }

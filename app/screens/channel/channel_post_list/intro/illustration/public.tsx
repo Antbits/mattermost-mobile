@@ -128,7 +128,7 @@ const PublicChannelIllustration = ({theme}: Props) => (
             </G>
             <Path
                 d='M54.566 85.36c4.037 5.692 11.223 12.59 11.223 12.59M77.245 100.418c7.042.266 16.94-2.727 16.94-2.727'
-                stroke='#1E325C'
+                stroke='#295d46'
                 strokeWidth={0.58}
                 strokeMiterlimit={10}
             />

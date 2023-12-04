@@ -47,7 +47,7 @@ export SUPPLY_VALIDATE_ONLY=false
 ############ REPLACE ASSETS, BUILD IN RELEASE MODE ############
 export BETA_BUILD=true
 export BUILD_FOR_RELEASE=true
-export REPLACE_ASSETS=false
+export REPLACE_ASSETS=true
 
 ############ APP IDENTIFIERS ############
 export MAIN_APP_IDENTIFIER=com.mattermost.rnbeta

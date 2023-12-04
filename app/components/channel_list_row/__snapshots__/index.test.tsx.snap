@@ -101,7 +101,7 @@ exports[`components/channel_list_row should be selected 1`] = `
       </View>
       <View>
         <Icon
-          color="#1c58d9"
+          color="#C8526A"
           name="check-circle"
           size={28}
         />

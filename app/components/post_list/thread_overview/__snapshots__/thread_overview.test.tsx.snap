@@ -77,7 +77,7 @@ exports[`ThreadOverview should match snapshot when post is not saved and 0 repli
         }
       >
         <Icon
-          color="#1C58D9"
+          color="#C8526A"
           name="bookmark"
           size={24}
         />

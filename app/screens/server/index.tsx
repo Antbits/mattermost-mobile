@@ -2,7 +2,7 @@
 // See LICENSE.txt for license information.
 
 import {useManagedConfig} from '@mattermost/react-native-emm';
-import React, {useCallback, useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {useIntl} from 'react-intl';
 import {Alert, BackHandler, Platform, useWindowDimensions, View} from 'react-native';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
@@ -29,7 +29,6 @@ import {loginOptions} from '@utils/server';
 import {changeOpacity, makeStyleSheetFromTheme} from '@utils/theme';
 import {getServerUrlAfterRedirect, isValidUrl, sanitizeUrl} from '@utils/url';
 
-import ServerForm from './form';
 import ServerHeader from './header';
 
 import type {DeepLinkWithData, LaunchProps} from '@typings/launch';
@@ -91,7 +90,6 @@ const Server = ({
     const [urlError, setUrlError] = useState<string | undefined>();
     const styles = getStyleSheet(theme);
     const {formatMessage} = intl;
-    const disableServerUrl = Boolean(managedConfig?.allowOtherServers === 'false' && managedConfig?.serverUrl);
     const additionalServer = launchType === Launch.AddServerFromDeepLink || launchType === Launch.AddServer;
 
     const dismiss = () => {
@@ -259,16 +257,6 @@ const Server = ({
         pingServer(serverUrl);
     };
 
-    const handleDisplayNameTextChanged = useCallback((text: string) => {
-        setDisplayName(text);
-        setDisplayNameError(undefined);
-    }, []);
-
-    const handleUrlTextChanged = useCallback((text: string) => {
-        setUrlError(undefined);
-        setUrl(text);
-    }, []);
-
     const isServerUrlValid = (serverUrl?: string) => {
         const testUrl = sanitizeUrl(serverUrl ?? url);
         if (!isValidUrl(testUrl)) {
@@ -381,22 +369,7 @@ const Server = ({
                         additionalServer={additionalServer}
                         theme={theme}
                     />
-                    <ServerForm
-                        autoFocus={additionalServer}
-                        buttonDisabled={buttonDisabled}
-                        connecting={connecting}
-                        displayName={displayName}
-                        displayNameError={displayNameError}
-                        disableServerUrl={disableServerUrl}
-                        handleConnect={handleConnect}
-                        handleDisplayNameTextChanged={handleDisplayNameTextChanged}
-                        handleUrlTextChanged={handleUrlTextChanged}
-                        isModal={isModal}
-                        keyboardAwareRef={keyboardAwareRef}
-                        theme={theme}
-                        url={url}
-                        urlError={urlError}
-                    />
+
                 </KeyboardAwareScrollView>
                 <AppVersion textStyle={styles.appInfo}/>
             </AnimatedSafeArea>

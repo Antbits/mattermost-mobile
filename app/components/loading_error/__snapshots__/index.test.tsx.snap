@@ -132,7 +132,7 @@ exports[`Loading Error should match snapshot 1`] = `
             "marginTop": 1,
           },
           {
-            "color": "#1c58d9",
+            "color": "#C8526A",
           },
         ]
       }
