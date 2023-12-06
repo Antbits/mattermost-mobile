@@ -97,7 +97,7 @@ export const loginAnimationOptions = () => {
                 color: 'transparent',
             },
             backButton: {
-                color: changeOpacity(theme.centerChannelColor, 0.56),
+                visible: false,
             },
             scrollEdgeAppearance: {
                 active: true,
@@ -199,6 +199,7 @@ Navigation.setDefaultOptions({
         },
         backButton: {
             enableMenu: false,
+            visible: false,
         },
         subtitle: {
             fontFamily: 'OpenSans',
@@ -337,6 +338,7 @@ export function resetToSelectServer(passProps: LaunchProps) {
                     backButton: {
                         color: theme.sidebarHeaderTextColor,
                         title: '',
+                        visible: false,
                     },
                     background: {
                         color: theme.sidebarBg,
@@ -383,6 +385,7 @@ export function resetToOnboarding(passProps: LaunchProps) {
                     backButton: {
                         color: theme.sidebarHeaderTextColor,
                         title: '',
+                        visible: false,
                     },
                     background: {
                         color: theme.sidebarBg,
@@ -474,6 +477,7 @@ export function goToScreen(name: AvailableScreens, title: string, passProps = {}
                 color: theme.sidebarHeaderTextColor,
                 title: '',
                 testID: 'screen.back.button',
+                visible: false,
             },
             background: {
                 color: theme.sidebarBg,
@@ -584,6 +588,7 @@ export function showModal(name: AvailableScreens, title: string, passProps = {},
             backButton: {
                 color: theme.sidebarHeaderTextColor,
                 title: '',
+                visible: false,
             },
             background: {
                 color: theme.sidebarBg,
