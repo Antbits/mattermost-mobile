@@ -32,7 +32,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>mattermost</string>
-				<string>mmauth</string>
+				<string>mmauthbeta</string>
 			</array>
 		</dict>
 	</array>
@@ -72,7 +72,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Enabling access to your location data means we can add location metadata to pictures and videos you share in $(PRODUCT_NAME).</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Enabling access to your device&apos;s microphones means you can capture audio for calls or videos to share in $(PRODUCT_NAME).</string>
+	<string>Enabling access to your device's microphones means you can capture audio for calls or videos to share in $(PRODUCT_NAME).</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Enabling write access to your photo library means you can save downloaded photos and videos from $(PRODUCT_NAME) to your device.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
